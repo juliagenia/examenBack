@@ -1,6 +1,17 @@
 import app from './src/app.js';
 import { sequelize, testConnection } from './src/config/database.js';
-import Product from './src/models/product.js'; 
+import { 
+    Playlist,
+    Usuario,
+    Plan,
+    Suscripcion,
+    Artista,
+    Album,
+    Cancion,
+    PlaylistCancion,
+    Reproduccion,
+    ArtistaCancion,
+    ArtistaAlbum,} from './src/models/index.js'; 
 
 const startServer = async () => {
   try {

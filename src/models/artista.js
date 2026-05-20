@@ -1,15 +1,15 @@
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../config/database.js';
 
-const Product = sequelize.define('Product', {
-  name: { 
+const Artista = sequelize.define('Product', {
+  nombreArtistico: { 
     type: DataTypes.STRING, 
     allowNull: true 
   },
-  price: { 
-    type: DataTypes.DECIMAL(10, 2),
+  biografia: { 
+    type: DataTypes.TEXT,
     validate: { min: 0 } 
   }
 });
 
-export default Product;
+export default Artista;

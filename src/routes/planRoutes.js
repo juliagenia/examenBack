@@ -1,6 +1,5 @@
- // src/routes/producto.routes.js
-    import { Router } from 'express';
-    import { Product } from '../models/index.js'; 
+ import { Router } from 'express';
+    import { Plan} from '../models/index.js'; 
 
     const router = Router();
 
