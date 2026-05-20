@@ -11,7 +11,7 @@ const Plan = sequelize.define('Plan', {
     allowNull: true
   },
   calidadAudio: { 
-    type: DataTypes.ENUM,
+    type: DataTypes.ENUM("Normal", "Alta", "Lossless"),
     allowNull: true
   },
   limiteDispositivos: { 

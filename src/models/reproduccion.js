@@ -16,7 +16,11 @@ const Reproduccion = sequelize.define('Reproduccion', {
   fechaHora: { 
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
+  },
+  dispositivo: { 
+    type: DataTypes.ENUM("Web", "App Movil", "Desktop", "TV")
   }
+
 });
 
 export default Reproduccion;

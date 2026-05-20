@@ -18,4 +18,4 @@
     const router = Router(); 
     router.use("/api/usuario", usuarioRoutes);
 
-    export default {router}; 
+    export default router; 
